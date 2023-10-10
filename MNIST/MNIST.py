@@ -36,7 +36,7 @@ model.compile(optimizer='adam',
 
 # 训练模型，使用训练数据x_train和y_train进行模型训练，进行5个epochs的训练，使用批量大小为64，
 # 同时使用测试数据x_test和y_test进行验证
-model.fit(x_train, y_train, epochs=10, batch_size=64, validation_data=(x_test, y_test))
+model.fit(x_train, y_train, epochs=7, batch_size=64, validation_data=(x_test, y_test))
 
 # 评估模型在测试数据上的性能，计算测试损失和测试准确率，verbose=2表示以详细模式显示评估信息
 test_loss, test_accuracy = model.evaluate(x_test, y_test, verbose=2)
